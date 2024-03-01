@@ -14,7 +14,7 @@ body {
 
 .contenedor-img {
     width: auto;
-    height: 500px;
+    height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,7 @@ body {
 
 .div-img {
     width: 100%;
-    height: 400px;
+    height: 350px;
     justify-content: center;
     align-items: center;
     border-radius: 200px;
@@ -34,9 +34,9 @@ body {
 }
 
 .img-formato {
-    height: 400px;
-    width: 400px;
-    border-radius: 200px;
+    height: 300px;
+    width: 350px;
+    border-radius: 300px;
 
 }
 
@@ -46,6 +46,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+
     /* Centra los elementos horizontalmente */
     align-items: center;
     gap: 100px;
@@ -67,7 +68,7 @@ body {
 
 .titulo-h1 {
     height: 100%;
-    background: linear-gradient(to left, #8a5c9c, #1d3ca3);
+    background: linear-gradient(to left, #d3c6d8, #1d3ca3);
     color: rgb(234, 236, 235);
     justify-content: center;
     align-items: center;
@@ -82,7 +83,8 @@ body {
 
 .item-li a {
     text-decoration: none;
-
+    color: rgb(255, 255, 255);
+    font-size: 50px;
 }
 
 .art-li {
@@ -91,19 +93,17 @@ body {
     min-width: 200px;
     min-height: 100px;
     font-size: 30px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(78, 145, 87);
     border: 4px solid rgb(80, 192, 46);
-    border-radius: 5px;
+    border-radius: 50px;
 }
 
 .art-li:hover {
-    transition: .9s;
+    transition: 1.15s;
     text-align: center;
     background-color: rgb(236, 149, 8);
-    font-size: 35px;
-    color: rgb(234, 233, 241);
     border: 5px solid rgb(17, 221, 44);
-    border-radius: 5px;
+    border-radius: 25px;
 }
 
 
@@ -121,20 +121,31 @@ body {
     margin-top: 50px;
     height: 50px;
     background: linear-gradient(to left, #6a5c9c, #2ea376);
+    background: linear-gradient(to left, #191a19, #2e36a3);
+
 
 }
 
 @media (max-width: 700px) {
+    body{
+        height: 100vh;
+    }
     .contenedor-img {
         height: 30%;
     }
+    .titulo-presentacion .titulo-h1{
+    
+        font-size: 45px;
+    }
 
     .presentacion-section {
+        background: linear-gradient(to left, #191a19, #2e36a3);
         display: flex;
         flex-direction: column;
-        justify-content: end;
+        justify-content: center;
         gap: 20px;
     }
+ 
 
     .img-formato {
         width: 250px;
@@ -144,8 +155,13 @@ body {
     .footer-presentacion {
         margin: 0;
         padding: 0;
-        height: 10px;
+        height: 60px;
         background: linear-gradient(to left, #6a5c9c, #2ea376);
 
+    }
+    .art-li {
+    
+        background-color: rgb(48, 192, 67);
+        border: 4px solid rgb(80, 192, 46);
     }
 }
