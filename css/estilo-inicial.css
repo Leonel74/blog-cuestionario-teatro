@@ -1,5 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Balsamic Sans';
+    margin: 0;
+    padding: 0;
+}
+
 body {
-background-color: rgb(201, 60, 60);
-color: black;
-font-size: 20px;
+    background: linear-gradient(to right, #a4a0b6, #21e262,#8582a8,#0ecab1);
+    transition: background-color 2s;
+}
+.titulo-presentacion {
+    height: 100px;
+
+}
+
+.titulo-presentacion .titulo-h1 {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: solid #32bd26 10px top;
+    border-radius: 10px;
+}
+
+.titulo-h1 {
+    height: 100%;
+    background: linear-gradient(to left, #d3c6d8, #1d3ca3);
+    color: rgb(234, 236, 235);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: -500px 0px 30px 80px rgb(115, 192, 147),500px 0px 50px  80px rgb(67, 172, 204);
+}
+.intro-materia{
+    margin: 10px 10px;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contenedor .div-img {
+    display: flex;
+
+}
+.img-formato {
+    height: 350px;
+    width: 350px;
+    border-radius: 300px;
+
+
+}
+
+.presentacion-section {
+    height: 60%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    /* Centra los elementos horizontalmente */
+    align-items: center;
+    gap: 100px;
+}
+
+
+
+
+.item-li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+}
+
+.art-li-init {
+    display: grid;
+    place-items: center;
+    min-width: 300px;
+    min-height: 100px;
+    font-size: 30px;
+    background-color: rgb(78, 145, 87);
+    border: 4px solid rgb(80, 192, 46);
+    border-radius: 50px;
+}
+.art-li-init:hover {
+    transition: 1.15s;
+    font-size: 25px;
+    min-width: 350px;
+    background-color: rgb(21, 5, 161);
+    border: 4px solid rgb(5, 151, 161);
+    border-radius: 50px;
+}
+
+.footer-presentacion {
+    margin-top: 50px;
+    height: 50px;
+    background: linear-gradient(to left, #6a5c9c, #2ea376);
+    background: linear-gradient(to left, #191a19, #2e36a3);
+
+
+}
+
+@media (max-width: 700px) {
+    body{
+        height: 100vh;
+    }
+    .contenedor {
+        height: 30%;
+    }
+    .titulo-presentacion .titulo-h1{
+    
+        font-size: 45px;
+    }
+
+    .presentacion-section {
+        background: linear-gradient(to left, #191a19, #2e36a3);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+ 
+
+    .img-formato {
+        width: 250px;
+        height: 50%;
+    }
+
+    .footer-presentacion {
+        margin: 0;
+        padding: 0;
+        height: 60px;
+        background: linear-gradient(to left, #6a5c9c, #2ea376);
+
+    }
+    .art-li {
+    
+        background-color: rgb(48, 192, 67);
+        border: 4px solid rgb(80, 192, 46);
+    }
 }
